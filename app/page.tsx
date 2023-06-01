@@ -14,7 +14,7 @@ const getGames = async (): Promise<Game[]> => {
   if (!res.ok) {
     throw new Error('failed to fetch');
   }
-  await new Promise((resolve) => setTimeout(resolve, 2000));
+  await new Promise((resolve) => setTimeout(resolve, 3000));
   const data = await res.json();
   return data.results;
 };
